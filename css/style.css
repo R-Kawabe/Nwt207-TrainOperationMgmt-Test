@@ -1,0 +1,292 @@
+/*===============================================
+画面の横幅が769px以上（パソコン用）
+===============================================*/
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    font-size: 12pt;
+}
+
+.header {
+    z-index: 10;
+    background: black;
+    height: 10%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.head-div {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.main-wrap {
+    height: 80%;
+    text-align: center;
+    /* color: #fff; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    font-size: 12pt;
+}
+
+.footer {
+    background: black;
+    height: 10%;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    background-color: greenyellow;
+    width: 100%;
+    text-align: center;
+}
+
+.carefull {
+    background-color: black;
+    font-weight: bold;
+    color: red;
+}
+
+.nowloading{
+    text-align: center;
+    font-weight: bolder;
+    margin: 5px auto;
+    padding: 5px;
+    /* width: 90%; */
+    border: 1px solid black;
+    /* 枠線 */
+    background-color: white;
+    /* 背景色 */
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+@media screen and (min-width: 801px) {
+    /* この部分にパソコン用だけに対応させたいCSSコードを入力していく */
+    .head-div {
+        font-size: 20pt;
+    }
+    .main {
+        background: whitesmoke;
+        height: 100%;
+        text-align: left;
+        /* color: black; */
+        width: 80%;
+        float: left;
+        overflow: auto;
+    }
+    .sidebar {
+        background: lightskyblue;
+        height: 100%;
+        text-align: center;
+        color: black;
+        width: 20%;
+        float: left;
+        overflow: auto;
+    }
+    .button {
+        display: inline-block;
+        width: 150px;
+        height: 50pt;
+        vertical-align: middle;
+        line-height: 50%;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        white-space: pre-wrap;
+    }
+    .button::before, .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    .button, .button::before, .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .button {
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    .button:hover {
+        background-color: #fff;
+        border-color: #59b1eb;
+        color: #59b1eb;
+    }
+}
+
+/*===============================================
+    画面の横幅が768pxまで（タブレット用）
+    ===============================================*/
+
+@media screen and (max-width: 900px) {
+    /* この部分にタブレット用・スマホ用に対応させたいCSSコードを入力していく */
+    .head-div {
+        font-size: 20pt;
+    }
+    .main {
+        background: whitesmoke;
+        height: 100%;
+        text-align: left;
+        /* color: black; */
+        width: 75%;
+        float: left;
+        overflow: auto;
+    }
+    .sidebar {
+        background: lightskyblue;
+        height: 100%;
+        text-align: center;
+        color: black;
+        width: 25%;
+        float: left;
+        overflow: auto;
+    }
+    input {
+        -webkit-appearance: none;
+    }
+    /* ボタンだけに指定する場合は以下 */
+    input[type="button"] {
+        -webkit-appearance: none;
+    }
+    input[type="reset"] {
+        -webkit-appearance: none;
+    }
+    .button {
+        display: inline-block;
+        width: 150px;
+        height: 40pt;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .button::before, .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    .button, .button::before, .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .button {
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50%;
+        /* z-index: auto; */
+    }
+    .button:hover {
+        background-color: #fff;
+        border-color: blue;
+        color: blue;
+    }
+    /* .output-area {
+        font-size: 10pt;
+    } */
+}
+
+/*===============================================
+    画面の横幅が640pxまで（スマホ用）
+    ===============================================*/
+
+@media screen and (max-width:640px) {
+    /* この部分にスマホ用だけに対応させたいCSSコードを入力していく */
+    .head-div {
+        font-size: 15pt;
+    }
+    .main {
+        background: whitesmoke;
+        height: 100%;
+        text-align: left;
+        /* color: black; */
+        width: 65%;
+        float: left;
+        overflow: auto;
+    }
+    .sidebar {
+        background: lightskyblue;
+        height: 100%;
+        text-align: center;
+        color: black;
+        width: 35%;
+        float: left;
+        overflow: auto;
+    }
+    input {
+        -webkit-appearance: none;
+    }
+    /* ボタンだけに指定する場合は以下 */
+    input[type="button"] {
+        -webkit-appearance: none;
+    }
+    input[type="reset"] {
+        -webkit-appearance: none;
+    }
+    .button {
+        display: inline-block;
+        width: 100%;
+        height: 40pt;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        white-space: pre-wrap;
+    }
+    .button::before, .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    .button, .button::before, .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .button {
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50%;
+    }
+    .button:hover {
+        background-color: #fff;
+        border-color: #59b1eb;
+        color: #59b1eb;
+    }
+    /* .output-area {
+        font-size: 10pt;
+    } */
+}

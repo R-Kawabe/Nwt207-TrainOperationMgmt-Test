@@ -1,0 +1,198 @@
+/* シンプル 枠（影）1 */
+
+.kakomi-box3 {
+    margin: 5px auto;
+    padding: 5px;
+    /* width: 90%; */
+    border: 1px solid lightgray;
+    /* 枠線 */
+    background-color: white;
+    /* 背景色 */
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.kakomi-box3:hover {
+    background-color: white;
+    /* width: 90%; */
+    border: 1px solid blue;
+}
+
+/* span {
+    font-weight: bold;
+} */
+
+/* 行先色付 */
+
+span.destination {
+    color: darkorange;
+}
+
+/* 遅延時分色付 */
+
+span.noDelay {
+    color: blue;
+    /* font-weight: normal; */
+}
+
+span.delayMinutes {
+    color: red;
+}
+
+span.overDelay {
+    color: red;
+    background-color: yellow;
+}
+
+/* 種別色付 */
+
+span.local {
+    color: black;
+}
+
+span.regionalrapid {
+    color: green;
+}
+
+span.rapid {
+    color: darkorange;
+}
+
+span.rapidC {
+    color: blue;
+}
+
+span.specialrapid {
+    color: blue;
+}
+
+span.newrapid {
+    color: darkorange;
+}
+
+span.specialrapidC {
+    color: goldenrod;
+}
+
+span.tanbajirapid {
+    color: goldenrod;
+}
+
+span.kixrapid {
+    color: royalblue;
+}
+
+span.kishujirapid {
+    color: darkorange;
+}
+
+span.yamatojirapid {
+    color: green;
+}
+
+span.miyakojirapid {
+    color: darkgoldenrod;
+}
+
+span.directrapid {
+    color: steelblue;
+}
+
+span.limitedexp {
+    color: red;
+}
+
+span.express {
+    color: orangered;
+}
+
+span.notinservice {
+    color: white;
+    background-color: black;
+}
+
+span.extra {
+    color: white;
+    background-color: purple;
+}
+
+/* 路線記号色付 */
+
+span.hokurikuA {
+    color: blue;
+}
+
+span.kosei {
+    color: deepskyblue;
+}
+
+span.kusatsu {
+    color: lime;
+}
+
+span.nara {
+    color: darkgoldenrod;
+}
+
+span.osakahigashi {
+    color: steelblue;
+}
+
+span.takarazuka {
+    color: gold;
+}
+
+span.tozai {
+    color: deeppink;
+}
+
+span.kakogawa {
+    color: turquoise;
+}
+
+span.kishin {
+    color: orangered;
+}
+
+span.osakaloop {
+    color: red;
+}
+
+span.yumesaki {
+    color: navy;
+}
+
+span.yamatoji {
+    color: green;
+}
+
+span.hanwahagoromo {
+    color: darkorange;
+}
+
+span.kansaiairport {
+    color: royalblue;
+}
+
+span.wakayama1 {
+    color: hotpink;
+}
+
+span.wakayama2 {
+    color: hotpink;
+}
+
+span.kansai {
+    color: darkviolet;
+}
+
+span.kinokuni {
+    color: darkturquoise;
+}
+
+span.manyomahoroba {
+    color: firebrick;
+}
+
+span.imbi1 {
+    color: goldenrod;
+}
